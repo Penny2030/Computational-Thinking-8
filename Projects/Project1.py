@@ -1,0 +1,8 @@
+name1=input("Name 1")
+name2=input("Name 2")
+name3=input("Name 3")
+name4=input("Name 4")
+noun1=input("Noun 1")
+noun2=input("Noun 2")
+noun3=input("Noun 3")
+print("Yesterday I went to {name1}'s birthday party.")
