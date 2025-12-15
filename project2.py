@@ -124,9 +124,12 @@ if answer20 == "true" or "T":
     ambivert_points += 1
 elif answer20 == "false" or "F":
     extrovert_points += 1
+input("")
+
 if introvert_points > extrovert_points and introvert_points > ambivert_points:
     print ("You are an introvert. Shhhh stop talking so loud I'm trying to be introverted.")
 elif extrovert_points > introvert_points and extrovert_points > ambivert_points:
     print ("You are an extrovert!!!!! PARTY TIME!!!!!!!!!!")
 elif ambivert_points > introvert_points and ambivert_points > extrovert_points:
     print ("You are an ambivert. You are the best of both worlds!")
+print (f"introvert{introvert_points} extrovert{extrovert_points} ambivert{ambivert_points}")
