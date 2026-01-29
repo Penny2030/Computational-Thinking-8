@@ -40,6 +40,8 @@ window.onkeypress (get_oldmoney,"p")
 # Thrid control
 def get_Me6():
     global Me6
+    global happiness
+    happiness += 100
     Me6 += 1
     x = random.randint (-200,200)
     y = random.randint (-200,200)
