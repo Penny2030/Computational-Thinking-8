@@ -23,7 +23,6 @@ t5 = create_sprite("Jasper2",x5,y5)
 
 
 # Section 3 - Racing
-# # TODO - explain here which sprites are faster or slower
 for i in range(45):
     # Milo
     x1 += random.randint(12,20)
