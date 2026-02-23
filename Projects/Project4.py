@@ -1,10 +1,10 @@
 import turtle, time, random
 from utils import *
-
-# Section 1 - setup
+# The goal and purpose of this game is to click your stress away by getting the most money and happiness.
+# Section 1
 # Background
 set_background("Mansion2")
-# Create two variables
+# Three variables
 money = 0
 oldmoney = 0
 Me6 = 0
@@ -27,16 +27,18 @@ def get_money():
     create_sprite ("Penny",x,y)
 # Key for action
 window.onkeypress (get_money,"space")
+# The space key is pressed and an image of a brand new penny appears, the amount of money and happiness each goes up by one.
 # Second control
-def get_oldmoney():
-    global oldmoney
+def get_money():
+    global money
     global happiness
-    oldmoney += 1
+    money -= 1
     happiness -= 1
     x = random.randint (-200,200)
     y = random.randint (-200,200)
     create_sprite ("OldPenny2",x,y)
-window.onkeypress (get_oldmoney,"p")
+window.onkeypress (get_money,"p")
+# The P key is pressed and an image of a old penny appears, the amount of money and happiness each goes down by one.
 # Thrid control
 def get_Me6():
     global Me6
@@ -46,7 +48,8 @@ def get_Me6():
     x = random.randint (-200,200)
     y = random.randint (-200,200)
     create_sprite ("Me6",x,y)
-window.onkeypress (get_Me6,"q")
+window.onkeypress (get_Me6,"q") 
+# The Q key is pressed and an image of me as a child appears, the amount of happiness goes up by hundred.
 
 
 # Section 3 - game loop
