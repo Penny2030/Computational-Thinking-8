@@ -97,5 +97,5 @@ for i in range(10000000000):
 
 if s1_tags >= s2_tags:
     print("Penny gratefully wins")
-if s2_tags > s1_tags:
+if s2_tags <= s1_tags:
     print("Amelia unfortunately wins")
